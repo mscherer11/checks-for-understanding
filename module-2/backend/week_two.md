@@ -5,19 +5,39 @@ Fork this respository. Answer the questions to the best of your ability. Try to 
 Note: When you're done, submit a PR. 
 
 1. At a high level, what is ActiveRecord? What does it do/allow you to do?
+  - It is a file that contains instructions on how to build the schema
 2. What is a migration?
+  - It is a process that runs a series of files to create the table structure
 3. How does a table relate to a model?
+  - 1:1 -> each table should have a model
 4. What kind of methods are `belongs_to`, and `has_many`? (i.e. class or instance) Give an example.
+  - class methods that define the relationships between tables
+  - Example: Tags belong_to Tasks
 5. What do they allow you to do?
+  - They allow you to create relationships
 6. What's the difference between agile workflow and waterfall method?
+  - Waterfall workflow is done in chunks at a time, agile is done in strips
 7. What is the difference between `#new` and `#create`?
+  - new creates and instance of the thing, create saves it to the database
 8. At a basic level, what does cURL allow you to do?
+  - sends http requests
 9. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
+  - teachers have many students
+  - teacher --> student (teacher_id)
 10. Define foreign key, primary key, and schema.
+  - foreign key - an indexed field that relates to another tables primary key
+  - primary key - the unique identifying field
+  - schema - table structure
 11. Describe the relationship between a foreign key on one table and a primary key on another table.
+  - a foreign key is another table's primary key
 12. What are the parts of an HTTP response?
+  - message, http verb, path
 13. `Rack::Test` allows us to test our controllers in isolation. What are some of the methods it gives us to simulate the request/response cycle?
+  - last_response.ok?
+  - last_response.message
 14. Describe some techniques to make our Sinatra views more DRY. Give an example of when you would use these techniques.
+  - Use a helper to contain logic that can be reused across views.
+  - Also pull logic out of the controller to another class
 
 
 ### Optional Questions
